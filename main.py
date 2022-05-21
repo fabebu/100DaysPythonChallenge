@@ -14,5 +14,5 @@ person = input("How many people to split the bill?")
 
 pay = (float(bill)+(float(bill)*(int(tip)/100)))/int(person)
 
-son= (round(pay,2))
-print(f"Each person should pay: {son} $")
+son= ("{:.2f}".format(pay))
+print(f"Each person should pay: $ {son} ")
